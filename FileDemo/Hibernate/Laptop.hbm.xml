@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-4-24 17:22:47 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Laptop" table="LAPTOP">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="cpu" type="java.lang.String">
+            <column name="CPU" />
+        </property>
+        <property name="harddiskCapacity" type="int">
+            <column name="HARDDISKCAPACITY" />
+        </property>
+        <property name="gpu" type="java.lang.String">
+            <column name="GPU" />
+        </property>
+        <property name="dateOfManufacture" type="date">
+            <column name="DATEOFMANUFACTURE" />
+        </property>
+        <property name="pic" type="java.sql.Blob">
+            <column name="PIC" />
+        </property>
+        <component name="address" class="Address">
+        <property name="phone" column="PHONE"></property>
+        <property name="postCode" column="POSTCODE"></property>
+        <property name="address" column="ADDRESS"></property>
+        </component>
+    </class>
+</hibernate-mapping>

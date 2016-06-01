@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion><!-- 指定当前pom的版本 -->
+
+  <groupId>com.wzf.hi</groupId><!-- 反写的公司网址+项目名 -->
+  <artifactId>hi</artifactId><!-- 项目名+模块名 -->
+  <version>0.0.1-SNAPSHOT</version><!-- snapshot快照；alpha内测；beta公测；Release稳定版；GA正式版 -->
+  <packaging>jar</packaging><!-- maven打包方式，默认jar，还有war/zip/pom/etc. -->
+
+  <name>hi</name><!-- 项目描述名 -->
+  <url>http://maven.apache.org</url><!-- 项目地址 -->
+  <description></description><!-- 项目描述 -->
+  <developers></developers><!-- 项目开发人员列表 -->
+  <licenses></licenses><!-- 许可证信息 -->
+  <organization></organization><!-- 组织信息 -->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies><!-- 依赖列表 -->
+    <dependency><!-- 依赖项 -->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <type></type>
+      <scope>test</scope><!-- 依赖范围，test表示在test中有用，在主代码中无效 -->
+      <!-- scope的值有六种：compile：默认的，编译、测试、运行都有效
+      /provided：测试、编译有效
+      /runtime：测试和运行时有效,JDBC
+      /test：测试时有效，junit
+      /system：测试、编译有效、可移植性差
+      /import ：导入的范围，它只使用在dependencyManagement中，表示从其他pom导入dependency的配置-->
+      <optional>true</optional><!-- 设置依赖是否可选，默认false，子项目继承依赖，如果为true，子项目必须显式引入该依赖 -->
+      <exclusions><!-- 排除依赖传递列表 -->
+      	<exclusion>
+      	</exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <dependencyManagement><!-- 依赖管理，里面的依赖并不运行，只是供子类继承 -->
+  	<dependencies>
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>3.8.1</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  <build><!-- 构建 -->
+  	<plugins><!-- 插件列表 -->
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-source-plugin</artifactId>
+  			<version>2.4</version>
+  			<executions>
+  				<execution>
+  					<phase>package</phase>
+  					<goals>
+  						<goal>jar-no-fork</goal>
+  					</goals>
+  				</execution>
+  			</executions>
+  		</plugin>
+  	</plugins>
+  </build>
+  <parent><!-- 在子模块中对父模块的pom继承 -->
+  </parent>
+  <modules><!-- 聚合多个模块，一直进行编译 -->
+  	<module>
+  	</module>
+  </modules>
+</project>
