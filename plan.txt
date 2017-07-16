@@ -93,6 +93,8 @@ UML类图与类的关系详解 http://www.uml.org.cn/oobject/201104212.asp
 十一、GIT
 GitHub版本控制使用（命令行实际操作图解Git使用方法） http://blog.csdn.net/chengzi_comm/article/details/51673802
 git 添加源地址和查看源地址 http://blog.csdn.net/fei33423/article/details/53540043
+git中手动删除的文件如何在git中删除 http://blog.csdn.net/xiaoyuanzhiying/article/details/44085135
+实例指导你 利用控制台(cmd) 完成github中项目管理 http://blog.csdn.net/chr23899/article/details/51791940
 
 其他：
 PKI系统深入介绍 http://blog.csdn.net/liuhuiyi/article/details/7776825
