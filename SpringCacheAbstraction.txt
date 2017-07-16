@@ -1,0 +1,20 @@
+Cache Abstraction
+1 介绍
+从3.1 Spring Framework 提供显式想Spring应用添加缓存的支持。与对事务的支持相似，Spring Cache abstraction 提供在对代码影响最小的条件下的多种缓存解决方案。
+自从 Spring 4.1 ，Spring cache abstraction 通过支持JSR-107注解和更多自定义选项获得大幅提升。
+2.理解cache abstraction
+Cache vs Buffer
+buffer和Cache这两个词有些相似，但是代表的是不同的东西。buffer通常作为一个速度快的实体与一个速度慢的实体中间的临时存储数据的中介。众所周知，模块之间的等待影响性能，buffer通过将多个传输的小数据片变为一个传输的较大数据片来缓和这种性能问题。数据的读写仅仅通过buffer。buffer至少对于与之相关联的多方中的一方是可见的。
+Cache依据其定义是隐藏的，任何一方都不能感知cache的存在。它通过使数据以更快速的方式多次读取提高性能（例如，将经常读取的数据存放于高速区域）。
+Spring Cache是在Java方法上应用缓存，若是执行相应Java方法要获取的数据在缓存已存在，则不执行相应方法，这样可以减少方法执行的次数，提高性能。如果Cache中没有找到数据，则会执行相应方法，然后将结果添加到Cache并返回给调用者。
+Spring cache abstraction 提供更新cache内容，移除指定内容等功能。当缓存数据可能发生变化时，这些功能比较有用。
+与Spring Framework的其他服务一样，cache服务只是一个抽象，需要使用实际的存储去缓存数据。存储举例：java.util.concurrent.ConcurrentMap，Ehcache 2.x，Gemfire cache，Caffeine，Guava caches 和 JSR-107兼容缓存（如Ehcache 3.x）
+Cache abstraction对于多线程和多进程未做特殊处理，这些由Cache的具体实现来处理。
+多进程环境可以每个进程准备一份缓存，但是当数据可能发生改变，我们可能需要激活其他传播机制。
+当多个线程同时读取同一条数据时并不会加锁，多个线程同时更新或移除也是一样，我们可能会得到脏数据。特定的Cache Provider在这方便提供高级特性。
+要去使用擦Cache abstraction，开发者需要关注两个方面：
+*caching declaration-指定需要应用缓存的方法
+*Cache configuration-实际数据读写的实体
+
+
+使用Squirrel作为Spring Cache的存储体，直接通过连接Squirrel来判定是否白名单
