@@ -1,0 +1,160 @@
+概述：
+一、数据结构与算法：1.数组、栈、队列、链表、数 2.排序算法（选择排序、插入排序、冒泡排序）
+二、Java：1.数据类型、collection 2.多线程
+三、JVM：1.内存 2.GC
+四、设计模式：1.单例
+五、数据库：oracle、mysql、sql
+六、网络：七层模型、TCP/IP、HTTP
+七、JavaWeb：
+八、spring：
+九、hibernate
+十、UML
+十一、GIT
+
+一、数据结构与算法
+Java程序员面试宝典 p247 选择排序
+Java程序员面试宝典 p248 插入排序
+
+二、Java：1.数据类型、collection 2.多线程
+java中HashMap详解 http://alex09.iteye.com/blog/539545
+Java大用处——动态数组的实现 http://blog.csdn.net/sum_tw/article/details/57158986
+深入Java集合学习系列：ArrayList的实现原理 http://zhangshixi.iteye.com/blog/674856
+JAVA处理未捕获异常 http://blog.csdn.net/jianggujin/article/details/50574332
+线程中join()的用法 http://www.cnblogs.com/jfqiu/p/3264045.html
+核心技术书I 第十四章 多线程
+java.util.concurrent包学习(一)锁的基本原理 http://www.cnblogs.com/onlywujun/articles/3531568.html
+java collections 笔记
+Java程序员面试宝典 p71 内部类有哪些
+加载一个类时，其内部类是否同时被加载?静态内部类单例模式 http://blog.csdn.net/davidluo001/article/details/50173823
+Java类的加载，以及静态内部类的问题。 http://blog.csdn.net/lengyueaiq/article/details/51143064
+HashMap为什么是线程不安全的？ http://blog.csdn.net/mydreamongo/article/details/8960667
+死锁产生的原因及四个必要条件 http://blog.csdn.net/ysdaniel/article/details/6644418
+fail-fast http://baike.baidu.com/link?url=L_W5glaMvctzdHYsyUKsEn6pQ43MyXd2jBA2k9L1ernzMOMXra4jAC1NCif4163l3sR5JtcctGzyHereP_TEQp_i8j2cy6gDVsk9pYkJENK
+java中四种引用类型 http://www.cnblogs.com/mjorcen/p/3968018.html
+彻底理解ThreadLocal http://blog.csdn.net/lufeng20/article/details/24314381
+深入分析 ThreadLocal 内存泄漏问题 http://blog.csdn.net/wudiyong22/article/details/52141608
+关于java中final关键字与线程安全性 http://www.cnblogs.com/jxldjsn/p/6115764.html
+Java8中的[方法引用]“双冒号”——走进Java Lambda(四) http://blog.csdn.net/lsmsrc/article/details/41747159
+Java 8新特性终极指南 http://www.importnew.com/11908.html
+Java 8 Optional类深度解析 http://www.importnew.com/6675.html
+
+三、JVM：1.内存 2.GC
+Java 类中各成分加载顺序 和 内存中的存放位置 http://blog.csdn.net/hmzdbql/article/details/8097172
+深入理解JVM—JVM内存模型 http://www.cnblogs.com/dingyingsi/p/3760447.html
+JVM中的直接引用和符号引用 http://blog.csdn.net/imzoer/article/details/8086255
+Java字面量（Java直接量）和符号引用 http://blog.csdn.net/u010850285/article/details/44152157
+jvm垃圾收集（标记-清除,复制，标记-整理，分代）算法 http://blog.csdn.net/hanruikai/article/details/42643325
+JVM 新生代老年代 http://www.cnblogs.com/E-star/p/5556188.html
+java虚拟机规范-运行时栈帧 http://www.cnblogs.com/editice/p/5420716.html
+深入理解Java G1垃圾收集器 http://www.cnblogs.com/ASPNET2008/p/6496481.html
+深入理解java虚拟机（十） Java 虚拟机运行时栈帧结构 http://blog.csdn.net/zq602316498/article/details/38926607
+
+四、设计模式
+JAVA设计模式之单例模式 http://blog.csdn.net/jason0539/article/details/23297037/
+由单例模式的优化，引出的java线程数据同步和类加载顺序知识点总结 http://blog.csdn.net/u012123160/article/details/53224469
+Java程序员面试宝典 p226 设计模式 单例、工厂、适配器、观察者
+Java设计模式之观察者模式 http://blog.csdn.net/jason0539/article/details/45055233
+JAVA设计模式初探之适配器模式 http://blog.csdn.net/jason0539/article/details/22468457
+
+五、数据库
+[整理]Oracle面试题(基础篇) http://www.cnblogs.com/goodyao/archive/2011/04/06/2006332.html
+ORACLE锁机制 http://www.cnblogs.com/gengyulong/archive/2011/04/07/2007586.html
+谈谈Oracle中的锁 http://www.cnblogs.com/suredandan/archive/2012/09/20/2696124.html
+Java程序员面试宝典 p219 什么是事务
+一分钟教你知道乐观锁和悲观锁的区别 http://blog.csdn.net/hongchangfirst/article/details/26004335
+mongodb书
+
+六、网络：七层模型、TCP/IP、HTTP
+TCP/IP四层模型和OSI七层模型的概念 http://blog.csdn.net/superjunjin/article/details/7841099
+简析TCP的三次握手与四次分手 http://www.jellythink.com/archives/705
+
+七、JavaWeb
+RESTful HTTP的实践 http://www.cnblogs.com/ajianbeyourself/p/4302309.html
+RESTful API 设计指南 http://www.ruanyifeng.com/blog/2014/05/restful_api.html
+理解RESTful架构 http://www.ruanyifeng.com/blog/2011/09/restful.html
+三种方法实现java调用Restful接口 http://blog.csdn.net/qq_34155601/article/details/70236948
+使用Spring框架实现RESTful http://www.importnew.com/5163.html
+Spring MVC之@RequestParam @RequestBody @RequestHeader 等详解 http://blog.csdn.net/kobejayandy/article/details/12690161
+最好的8个 Java RESTful 框架 http://www.importnew.com/17138.html
+使用Jersey+Spring+Tomcat构建RESTful Web服务 http://blog.csdn.net/top_code/article/details/51973503
+最适合大数据应用的是SOA还是REST？ http://www.csdn.net/article/2014-07-22/2820776
+
+八、spring
+[Java面试五]Spring总结以及在面试中的一些问题. http://www.cnblogs.com/wang-meng/p/5701982.html
+
+九、hibernate
+关于hibernate中对象的三种状态分析 http://blog.csdn.net/communicate_/article/details/8452786
+hibernate树形结构 http://blog.csdn.net/liushaohan01/article/details/7865555
+Hibernate 配置详解(12)-bm2ddl.import_files http://blog.csdn.net/stefwu/article/details/10584161
+
+十、UML
+UML类图与类的关系详解 http://www.uml.org.cn/oobject/201104212.asp
+
+十一、GIT
+GitHub版本控制使用（命令行实际操作图解Git使用方法） http://blog.csdn.net/chengzi_comm/article/details/51673802
+git 添加源地址和查看源地址 http://blog.csdn.net/fei33423/article/details/53540043
+
+其他：
+PKI系统深入介绍 http://blog.csdn.net/liuhuiyi/article/details/7776825
+数字证书原理,公钥私钥加密原理 http://blog.csdn.net/ly131420/article/details/38400583
+
+
+
+
+需要准备的内容：
+java.util包：主要包括collection和concurrent内容
+
+1.database、SQL优化
+2.Javaweb框架
+3.算法、设计模式、jvm
+4.流行框架：zookeeper
+5.流行技术：noSQL、mongodb、缓存redis、消息队列
+6.高并发
+7.jdk  java.util包
+
+
+
+zookeeper/dubbo
+算法、Spring、大数据、redis、noSQL
+
+
+
+
+spring、sql、工作流、webservice
+
+
+
+系统学习javaweb相关知识
+相关高级技术学习，如nosql，缓存等
+
+JVM
+Spring
+设计模式
+jdk动态代理原理
+
+
+
+消息中间件ActiveMQ,RabbitMQ
+服务框架：Dubbo 其他SOA框架
+缓存技术Memcached，Redis
+
+bash Shell
+Java数据结构
+Java网络编程
+
+
+
+数据库分库分表
+CDN
+缓存
+负载均衡
+静态化
+
+
+
+
+JVM、规则引擎
+框架
+多线程、高性能编程、高并发
+数据库
+分布式系统、缓存、消息
