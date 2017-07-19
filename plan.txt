@@ -10,6 +10,8 @@
 九、hibernate
 十、UML
 十一、GIT
+十二、代码整洁
+
 
 一、数据结构与算法
 Java程序员面试宝典 p247 选择排序
@@ -95,11 +97,17 @@ GitHub版本控制使用（命令行实际操作图解Git使用方法） http://blog.csdn.net/chengzi
 git 添加源地址和查看源地址 http://blog.csdn.net/fei33423/article/details/53540043
 git中手动删除的文件如何在git中删除 http://blog.csdn.net/xiaoyuanzhiying/article/details/44085135
 实例指导你 利用控制台(cmd) 完成github中项目管理 http://blog.csdn.net/chr23899/article/details/51791940
+Git 多账户配置使用，同时使用github 和 gitoschina http://blog.csdn.net/bat1992/article/details/54893290
+
+十二、代码整洁
+得墨忒耳定律 http://www.importnew.com/10501.html
+IoC模式（依赖、依赖倒置、依赖注入、控制反转） http://www.cnblogs.com/fuchongjundream/p/3873073.html
 
 其他：
 PKI系统深入介绍 http://blog.csdn.net/liuhuiyi/article/details/7776825
 数字证书原理,公钥私钥加密原理 http://blog.csdn.net/ly131420/article/details/38400583
 
+The end.
 
 
 
